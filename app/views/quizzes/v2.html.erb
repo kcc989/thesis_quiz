@@ -1,0 +1,27 @@
+     <body id="slickQuiz">
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+
+                <a class="button startQuiz" href="#">Get Started!</a>
+            </div>
+
+            <!-- where the quiz gets built -->
+        </div>
+
+        <div class="quizResults">
+            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+	    <h3 class="quizOpponentScore">Your Opponent Scored: <span></span></h3>
+
+            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+	    
+	    
+            <div class="quizResultsCopy">
+                <h5>Results</h5><p>The specific result stuff will go here</p><form action='/results' method='post'><div id='idSelect'>Particpant ID:<br><input type="text" id="participantID"></div> <div id='classYearSelect'><div>Class Year</div><select id='classYear'><option></option><option>First Year</option><option>Sophomore</option><option>Junior</option><option>Senior</option></select></div><div id='majorSelect'><div>What is your Major?</div><select id='major'><option></option><option>Humanities</option><option>Social Sciences</option><option>Hard Sciences</option><option>Art/Music</option><option>Math/ Computer Science</option><option>Foreign Language</option></select></div><div id='gpaSelect'><div>What is your GPA?</div><input type='radio' name='gpa' value='4.1 or above' checked>4.1 or above<br><input type='radio' name='gpa' value='3.6 - 4.0'>3.6 - 4.0<br><input type='radio' name='gpa' value='3.1 - 3.5'>3.1 - 3.5<br><input type='radio' name='gpa' value='2.6 - 3.0'>2.6 - 3.0<br><input type='radio' name='gpa' value='2.1 - 2.5'>2.1 - 2.5<br><input type='radio' name='gpa' value='2.0 or below'>2.0 or below</div><div id='genderSelect'><div>Are you male or female?</div><input type='radio' name='sex' value='Male' checked>Male<br><input type='radio' name='sex' value='Female'>Female</div><div id='raceSelect'><div>Are you White, Black or African-American, American Indian or Alaskan Native, Asian, Native Hawaiian or other Pacific islander, or some other race?</div><input type='radio' name='race' value='White' checked>White<br><input type='radio' name='race' value='Black'>Black<br><input type='radio' name='race' value='American Indian or Alaskan Native'>American Indian or Alaskan Native<br><input type='radio' name='race' value='Asian'>Asian<br><input type='radio' name='race' value='Native Hawaiian or other Pacific Islander'>Native Hawaiian or other Pacific Islander<br><input type='radio' name='race' value='Other'>Other<br>If Other please specify:<br><input type='text' id='raceOther'></div><div id='incomeSelect'><div>How much total combined money did all members of your HOUSEHOLD earn in 2014? This includes money from jobs; net income from business, farm, or rent; pensions; dividends; interest; social security payments; and any other money income received by members of your HOUSEHOLD that are EIGHTEEN (18) years of age or older. Please report the total amount of money earned - do not subtract the amount you paid in taxes or any deductions listed on your tax return.</div><input type='radio' name='income' value='Less than $20,000' checked>Less than $20,000<br><input type='radio' name='income' value='>$20,000 to $34,999'>$20,000 to $34,999<br><input type='radio' name='income' value='$35,000 to $49,999'>$35,000 to $49,999<br><input type='radio' name='income' value='$50,000 to $74,999'>$50,000 to $74,999<br><input type='radio' name='income' value='$75,000 to $99,999'>$75,000 to $99,999<br><input type='radio' name='income' value='$100,000 to $149,999'>$100,000 to $149,999<br><input type='radio' name='income' value='$150,000 or More'>$150,000 or More</div><div id='religionSelect'><div>Do you identify with any of the following religions? (Please select all that apply.)</div><input type='checkbox' name='religion' value='Protestanism' >Protestantism<br><input type='checkbox' name='religion' value='Catholicism'>Catholicism<br><input type='checkbox' name='religion' value='Christianity'>Christianity<br><input type='checkbox' name='religion' value='Judaism'>Judaism<br><input type='checkbox' name='religion' value='Islam'>Islam<br><input type='checkbox' name='religion' value='Buddhism'>Buddhism<br><input type='checkbox' name='religion' value='Hinduism'>Hinduism<br><input type='checkbox' name='religion' value='Native American'>Native American<br><input type='checkbox' name='religion' value='Inter/Non-denominational'>Inter/Non-denominational<br><input type='checkbox' name='religion' value='No Religion'>No Religion<br><input type='checkbox' name='religion' value='Other'>Other<br>If Other please specify:<br><input type='text' id='religionOther'></div><br><input type='submit' class='submitQuiz' id= 'submitter'></form>
+            </div>
+        </div>
+	<%= javascript_include_tag "slick_quiz/slickQuiz-config2.js" %>
+	<%= csrf_meta_tags %>
+    </body>

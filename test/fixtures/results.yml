@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  score: 1
+  participant_id: 1
+  class_year: MyString
+  major: MyString
+  gpa: MyString
+  gender: MyString
+  race: MyString
+  income: MyString
+  religion: MyString
+
+two:
+  score: 1
+  participant_id: 1
+  class_year: MyString
+  major: MyString
+  gpa: MyString
+  gender: MyString
+  race: MyString
+  income: MyString
+  religion: MyString
