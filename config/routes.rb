@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   
   get 'quizzes/v3'
 
-  root 'quizzes#thanks'
+  get 'quizzes/thanks'
   
   resources :results, :only =>[:create, :index] do
   end
