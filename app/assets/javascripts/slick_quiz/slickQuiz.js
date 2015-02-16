@@ -187,10 +187,8 @@
 			    console.log("We are doing some error checking");
 			    $.post("/results", result, function (data){
 				    window.location.replace("/");
-				}),
-				function (data){
-				    window.location.replace("/");
-				});
+				}).always(function(){window.location.replace("/")});
+	  
 			}
 
 		    });
