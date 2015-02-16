@@ -4,9 +4,10 @@ class ResultsController < ApplicationController
 
   def index
     @results = Result.all
-    respond_to do |format|
-      format.xls {send_data @results.to_csv(col_sep: "\t")}
-    end
+    #respond_to do |format|
+     # format.xls {send_data @results.to_csv(col_sep: "\t")}
+    #end
+    send_data @results.to_csv(col_sep: "\t")
   end
 
   def create

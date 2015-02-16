@@ -186,7 +186,7 @@
 			if(!error){
 			    console.log("We are doing some error checking");
 			    $.post("/results", result, function (data){
-				    window.location.replace("/quizzes/v1");
+				    window.location.replace("/");
 				});
 			}
 
@@ -514,7 +514,7 @@
 		    console.log(score + quizValues.info.opponent);
 		    var opponentScore = score + quizValues.info.opponenet;
 		    if(opponentScore > questionCount){ opponentScore = questionCount;}
-		    $(_quizOpponent + ' span').html(score + quizValues.info.opponent);
+		    $(_quizOpponent + ' span').html(opponentScore + " / " + questionCount);
 		}
                 $(_quizLevel + ' span').html(levelText);
                 $(_quizLevel).addClass('level' + levelRank);
