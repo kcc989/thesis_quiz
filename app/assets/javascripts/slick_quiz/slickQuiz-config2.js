@@ -16,7 +16,7 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "A bag contains 2 red, 3 black, and 4 white balls. What is the probability of drawing a black and red ball in two successive draws, each ball being put back after it is drawn?",
+            "q": "A bag contains 2 red, 3 black, and 4 white balls. What is the probability of drawing a black and red ball in two successive draws where order does not matter, each ball being put back after it is drawn?",
             "a": [
                 {"option": "2/27",      "correct": false},
                 {"option": "1/9",     "correct": false},
@@ -76,7 +76,7 @@ var quizJSON = {
             "incorrect": "<p><span>...Incorrect</span></p>"
         },
         { // Question 7
-            "q": "5X + 2Y = 50" + "4X + 1Y = 40" + "X = ?",
+            "q": "5X + 2Y = 50 <br>" + "4X + 1Y = 40 <br>" + "X = ?",
             "a": [
                 {"option": "5",    "correct": false},
                 {"option": "8",     "correct": false},
