@@ -150,11 +150,11 @@ var quizJSON = {
         { // Question 13
             "q": "If two six-sided die are rolled and the numbers added up together, what is the probability of a total lower than 3?",
             "a": [
-                {"option": "30",    "correct": true},
-                {"option": "40",     "correct": false},
-                {"option": "50",      "correct": false},
-                {"option": "60",   "correct": false},
-                {"option": "70",   "correct": false }
+                {"option": "1/36",    "correct": true},
+                {"option": "1/24",     "correct": false},
+                {"option": "1/18",      "correct": false},
+                {"option": "1/28",   "correct": false},
+                {"option": "1/34",   "correct": false }
             ],
             "correct": "<p><span>Correct!</span> </p>",
             "incorrect": "<p><span>...Incorrect</span></p>"
